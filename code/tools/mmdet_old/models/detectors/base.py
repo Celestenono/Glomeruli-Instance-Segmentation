@@ -55,7 +55,7 @@ class BaseDetector(nn.Module):
                 'img_shape', 'scale_factor', 'flip', and my also contain
                 'filename', 'ori_shape', 'pad_shape', and 'img_norm_cfg'.
                 For details on the values of these keys see
-                `mmdet/datasets/pipelines/formatting.py:Collect`.
+                `mmdet_old/datasets/pipelines/formatting.py:Collect`.
 
              **kwargs: specific to concrete implementation
         """

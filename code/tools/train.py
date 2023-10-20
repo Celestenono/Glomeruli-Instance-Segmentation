@@ -3,8 +3,8 @@ import argparse
 import os
 
 import torch
-from mmcv import Config
-# from mmengine.config import Config
+# from mmcv import Config
+from mmengine.config import Config
 
 from mmdet import __version__
 from mmdet.apis import (get_root_logger, init_dist, set_random_seed,
@@ -88,7 +88,7 @@ def main():
     if len(cfg.workflow) == 2:
         datasets.append(build_dataset(cfg.data.val))
     if cfg.checkpoint_config is not None:
-        # save mmdet version, config file content and class names in
+        # save mmdet_old version, config file content and class names in
         # checkpoints as meta data
         cfg.checkpoint_config.meta = dict(
             mmdet_version=__version__,

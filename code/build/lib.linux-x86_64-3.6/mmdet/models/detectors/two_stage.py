@@ -144,7 +144,7 @@ class TwoStageDetector(BaseDetector, RPNTestMixin, BBoxTestMixin,
                 'img_shape', 'scale_factor', 'flip', and my also contain
                 'filename', 'ori_shape', 'pad_shape', and 'img_norm_cfg'.
                 For details on the values of these keys see
-                `mmdet/datasets/pipelines/formatting.py:Collect`.
+                `mmdet_old/datasets/pipelines/formatting.py:Collect`.
 
             gt_bboxes (list[Tensor]): each item are the truth boxes for each
                 image in [tl_x, tl_y, br_x, br_y] format.
