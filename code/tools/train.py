@@ -3,7 +3,8 @@ import argparse
 import os
 
 import torch
-from mmcv import Config
+# from mmcv import Config
+from mmengine.config import Config
 
 from mmdet import __version__
 from mmdet.apis import (get_root_logger, init_dist, set_random_seed,
